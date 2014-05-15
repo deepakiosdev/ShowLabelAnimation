@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C8E01F1923F5CE0023E584 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C8E01C1923F5CE0023E584 /* WYPopoverController.m */; };
+		00C8E0201923F5CE0023E584 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C8E01E1923F5CE0023E584 /* WYStoryboardPopoverSegue.m */; };
+		00C8E0261923FD320023E584 /* TagListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C8E0251923FD320023E584 /* TagListViewController.m */; };
 		00D57A6018E67C7500A8840C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D57A5F18E67C7500A8840C /* Foundation.framework */; };
 		00D57A6218E67C7500A8840C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D57A6118E67C7500A8840C /* CoreGraphics.framework */; };
 		00D57A6418E67C7500A8840C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D57A6318E67C7500A8840C /* UIKit.framework */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C8E01B1923F5CE0023E584 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		00C8E01C1923F5CE0023E584 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		00C8E01D1923F5CE0023E584 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		00C8E01E1923F5CE0023E584 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		00C8E0241923FD320023E584 /* TagListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagListViewController.h; sourceTree = "<group>"; };
+		00C8E0251923FD320023E584 /* TagListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagListViewController.m; sourceTree = "<group>"; };
 		00D57A5C18E67C7500A8840C /* ShowLabelAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowLabelAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D57A5F18E67C7500A8840C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00D57A6118E67C7500A8840C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C8E01A1923F5CE0023E584 /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				00C8E01B1923F5CE0023E584 /* WYPopoverController.h */,
+				00C8E01C1923F5CE0023E584 /* WYPopoverController.m */,
+				00C8E01D1923F5CE0023E584 /* WYStoryboardPopoverSegue.h */,
+				00C8E01E1923F5CE0023E584 /* WYStoryboardPopoverSegue.m */,
+			);
+			path = WYPopoverController;
+			sourceTree = "<group>";
+		};
 		00D57A5318E67C7500A8840C = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +141,10 @@
 				00D57A7718E67C7500A8840C /* ViewController.h */,
 				00D57A7818E67C7500A8840C /* ViewController.m */,
 				00D57A7A18E67C7500A8840C /* Images.xcassets */,
+				00C8E01A1923F5CE0023E584 /* WYPopoverController */,
 				00D57A6618E67C7500A8840C /* Supporting Files */,
+				00C8E0241923FD320023E584 /* TagListViewController.h */,
+				00C8E0251923FD320023E584 /* TagListViewController.m */,
 			);
 			path = ShowLabelAnimation;
 			sourceTree = "<group>";
@@ -253,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C8E0261923FD320023E584 /* TagListViewController.m in Sources */,
 				00D57A7918E67C7500A8840C /* ViewController.m in Sources */,
 				00D57A7018E67C7500A8840C /* AppDelegate.m in Sources */,
 				00D57A6C18E67C7500A8840C /* main.m in Sources */,
+				00C8E01F1923F5CE0023E584 /* WYPopoverController.m in Sources */,
+				00C8E0201923F5CE0023E584 /* WYStoryboardPopoverSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +500,7 @@
 				00D57A9318E67C7500A8840C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00D57A9418E67C7500A8840C /* Build configuration list for PBXNativeTarget "ShowLabelAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +509,7 @@
 				00D57A9618E67C7500A8840C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
